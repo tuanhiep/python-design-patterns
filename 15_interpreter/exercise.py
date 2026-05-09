@@ -25,7 +25,7 @@ class ExpressionProcessor:
         parts = megasplit('(?<=[+-])', expression)
 
         for part in parts:
-            noop = re.split('[\+\-]', part)
+            noop = re.split(r'[+-]', part)
             first = noop[0]
             value = 0
 
